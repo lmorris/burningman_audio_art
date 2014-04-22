@@ -2,11 +2,25 @@ __author__ = 'studleemon'
 
 import multiprocessing
 import pydub
+import pyaudio
+import pygame
+import wave
+import time
 
+CHUNK = 1024
+FORMAT = pyaudio.paInt16
+CHANNELS = 2
+RATE = 44100
+RECORD_SECONDS = 5
+WAVE_OUTPUT_FILENAME = "output.wav"
+INSTRUCT = "instruct.wav"
 
 class Recorder(object):
 
     filename = ""
+
+    def __init__(self):
+        self.player = pyaudio.PyAudio()
 
     def button_down(self):
         return True
@@ -30,6 +44,8 @@ class Recorder(object):
                 # Stop recording
                 # Mix audio
                 # Start playing channels
+
+            time.sleep(0.1)
 
 
 class Player(object):
