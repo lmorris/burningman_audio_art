@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3342fee5-2e0c-4978-bb83-79aba1c925f4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artmixer.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/audart.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/button_test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/record_instructions.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/settings.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/audioloop.py" afterPath="$PROJECT_DIR$/audioart.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artmixer.py" afterPath="$PROJECT_DIR$/artmixer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/audioart.py" afterPath="$PROJECT_DIR$/audioart.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.py" afterPath="$PROJECT_DIR$/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="burningman_audio_art.iws" />
@@ -21,7 +18,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/burningman_audio_art$button_test.coverage" NAME="button_test Coverage Results" MODIFIED="1400341995436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/burningman_audio_art$AudioArt.coverage" NAME="AudioArt Coverage Results" MODIFIED="1400434169266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/burningman_audio_art$AudioArt.coverage" NAME="AudioArt Coverage Results" MODIFIED="1403653750395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/burningman_audio_art$record_instructions.coverage" NAME="record_instructions Coverage Results" MODIFIED="1400429471753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -39,7 +36,7 @@
       <file leaf-file-name="audioart.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/audioart.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="157" column="26" selection-start="4931" selection-end="4931" vertical-scroll-proportion="0.0" vertical-offset="2427" max-vertical-offset="3708">
+            <state line="16" column="39" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="3407" max-vertical-offset="3960">
               <folding />
             </state>
           </provider>
@@ -48,7 +45,7 @@
       <file leaf-file-name="record_instructions.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/record_instructions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="23" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="216">
+            <state line="4" column="0" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="216">
               <folding />
             </state>
           </provider>
@@ -57,7 +54,7 @@
       <file leaf-file-name="pydevd.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1538" column="0" selection-start="60694" selection-end="60694" vertical-scroll-proportion="0.0" vertical-offset="27684" max-vertical-offset="27810">
+            <state line="0" column="92" selection-start="90" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="27810">
               <folding />
             </state>
           </provider>
@@ -72,13 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="artmixer.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="artmixer.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/artmixer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="45" selection-start="2077" selection-end="2077" vertical-scroll-proportion="0.7375" vertical-offset="1006" max-vertical-offset="1746">
-              <folding>
-                <element signature="e#19#28#0" expanded="true" />
-              </folding>
+            <state line="65" column="23" selection-start="1899" selection-end="1899" vertical-scroll-proportion="0.0" vertical-offset="1170" max-vertical-offset="1746">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -86,16 +81,16 @@
       <file leaf-file-name="audio_segment.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file:///usr/local/lib/python2.7/dist-packages/pydub/audio_segment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="129" column="0" selection-start="3886" selection-end="3886" vertical-scroll-proportion="0.0" vertical-offset="2322" max-vertical-offset="12762">
+            <state line="173" column="67" selection-start="5279" selection-end="5281" vertical-scroll-proportion="0.0" vertical-offset="3114" max-vertical-offset="12762">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="18" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="558">
+            <state line="24" column="0" selection-start="180" selection-end="314" vertical-scroll-proportion="1.2413793" vertical-offset="0" max-vertical-offset="558">
               <folding />
             </state>
           </provider>
@@ -116,10 +111,10 @@
       <list>
         <option value="$PROJECT_DIR$/audioloop.py" />
         <option value="$PROJECT_DIR$/button_test.py" />
-        <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/record_instructions.py" />
-        <option value="$PROJECT_DIR$/audioart.py" />
         <option value="$PROJECT_DIR$/artmixer.py" />
+        <option value="$PROJECT_DIR$/audioart.py" />
+        <option value="$PROJECT_DIR$/settings.py" />
       </list>
     </option>
   </component>
@@ -143,7 +138,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -155,7 +150,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -176,6 +170,20 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="burningman_audio_art">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -189,6 +197,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/audioart.py" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="LayoutCode.rearrangeEntriesPython" value="false" />
+    <property name="SearchEverywhereHistory" value="50" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -444,19 +453,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="35" y="24" width="1331" height="744" extended-state="7" />
+    <frame x="35" y="24" width="1331" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970452" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15175097" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980545" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33229572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33333334" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36714977" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3510467" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -505,12 +514,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/audioart.py</url>
-          <line>199</line>
+          <line>213</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/audioart.py</url>
-          <line>153</line>
+          <line>167</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
@@ -557,9 +566,7 @@
     <entry file="file://$PROJECT_DIR$/artmixer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="0" selection-start="858" selection-end="858" vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="1368">
-          <folding>
-            <element signature="e#19#28#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -587,9 +594,7 @@
     <entry file="file://$PROJECT_DIR$/artmixer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="33" selection-start="1605" selection-end="1605" vertical-scroll-proportion="0.0" vertical-offset="954" max-vertical-offset="1458">
-          <folding>
-            <element signature="e#19#28#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -615,9 +620,7 @@
     <entry file="file://$PROJECT_DIR$/artmixer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="33" selection-start="1605" selection-end="1605" vertical-scroll-proportion="0.0" vertical-offset="954" max-vertical-offset="1458">
-          <folding>
-            <element signature="e#19#28#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -643,9 +646,7 @@
     <entry file="file://$PROJECT_DIR$/artmixer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="0" selection-start="1044" selection-end="1044" vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="1440">
-          <folding>
-            <element signature="e#19#28#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -671,9 +672,7 @@
     <entry file="file://$PROJECT_DIR$/artmixer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="0" selection-start="1044" selection-end="1044" vertical-scroll-proportion="0.0" vertical-offset="334" max-vertical-offset="1440">
-          <folding>
-            <element signature="e#19#28#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -699,9 +698,7 @@
     <entry file="file://$PROJECT_DIR$/artmixer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="20" selection-start="1428" selection-end="1428" vertical-scroll-proportion="0.0" vertical-offset="882" max-vertical-offset="1422">
-          <folding>
-            <element signature="e#19#28#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -737,9 +734,7 @@
     <entry file="file://$PROJECT_DIR$/artmixer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="0" selection-start="2087" selection-end="2087" vertical-scroll-proportion="0.0" vertical-offset="1080" max-vertical-offset="1602">
-          <folding>
-            <element signature="e#19#28#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -765,9 +760,7 @@
     <entry file="file://$PROJECT_DIR$/artmixer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="0" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.0" vertical-offset="792" max-vertical-offset="1728">
-          <folding>
-            <element signature="e#19#28#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -788,9 +781,7 @@
     <entry file="file://$PROJECT_DIR$/artmixer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="0" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.0" vertical-offset="682" max-vertical-offset="1728">
-          <folding>
-            <element signature="e#19#28#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -832,6 +823,11 @@
         <state line="168" column="0" selection-start="6662" selection-end="6662" vertical-scroll-proportion="-2.7394366" vertical-offset="4191" max-vertical-offset="9378" />
       </provider>
     </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/pydub/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="504" selection-end="504" vertical-scroll-proportion="0.33174226" vertical-offset="185" max-vertical-offset="3150" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/button_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="26" selection-start="240" selection-end="241" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
@@ -839,52 +835,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/pydub/audio_segment.py">
+    <entry file="file://$PROJECT_DIR$/artmixer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="0" selection-start="3886" selection-end="3886" vertical-scroll-proportion="0.0" vertical-offset="2322" max-vertical-offset="12762">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1538" column="0" selection-start="60694" selection-end="60694" vertical-scroll-proportion="0.0" vertical-offset="26062" max-vertical-offset="26640">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/pydub/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="504" selection-end="504" vertical-scroll-proportion="0.33174226" vertical-offset="185" max-vertical-offset="3150" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="18" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/record_instructions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="23" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
+        <state line="65" column="23" selection-start="1899" selection-end="1899" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1602">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/audioart.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="26" selection-start="4931" selection-end="4931" vertical-scroll-proportion="0.0" vertical-offset="2427" max-vertical-offset="3708">
+        <state line="16" column="39" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="3960">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/artmixer.py">
+    <entry file="file://$PROJECT_DIR$/record_instructions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="45" selection-start="2077" selection-end="2077" vertical-scroll-proportion="0.7375" vertical-offset="1006" max-vertical-offset="1746">
-          <folding>
-            <element signature="e#19#28#0" expanded="true" />
-          </folding>
+        <state line="4" column="0" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="92" selection-start="90" selection-end="92" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="26640">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/pydub/audio_segment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="173" column="67" selection-start="5279" selection-end="5281" vertical-scroll-proportion="0.0" vertical-offset="3114" max-vertical-offset="12762">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="180" selection-end="314" vertical-scroll-proportion="1.2413793" vertical-offset="0" max-vertical-offset="558">
+          <folding />
         </state>
       </provider>
     </entry>

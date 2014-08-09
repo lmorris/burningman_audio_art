@@ -4,7 +4,7 @@ __author__ = 'studleemon'
 import os
 import os.path as path
 import glob
-
+from subprocess import call
 import pyaudio
 import pygame
 from pygame.locals import KEYUP, KEYDOWN, K_RETURN, K_KP_ENTER, NOEVENT
@@ -14,7 +14,7 @@ import datetime
 import settings
 import artmixer
 pygame.init()
-screen = pygame.display.set_mode([600,400])
+screen = pygame.display.set_mode([800,600])
 pygame.event.pump()
 
 class AudioArt(object):
@@ -102,25 +102,39 @@ class AudioArt(object):
                         frames_per_buffer=settings.CHUNK)
         print("* recording: %s" % filename)
         frames = []
+        stop = settings.CHUNK * 43 * 20
+        current = 0
         while True:
             event = pygame.event.poll()
             # if event.type != NOEVENT:
             #     print event
-            if event.type == KEYDOWN:
+            if event.type == KEYDOWN and event.key == K_RETURN:
                 break
             data = stream.read(settings.CHUNK)
             frames.append(data)
-
+            current += settings.CHUNK
+            if current > stop:
+                break
         print("* done recording")
         stream.stop_stream()
         stream.close()
         p.terminate()
-        wf = wave.open(filename, 'wb')
+        wf = wave.open("temp.wav", 'wb')
         wf.setnchannels(settings.CHANNELS)
         wf.setsampwidth(p.get_sample_size(settings.FORMAT))
         wf.setframerate(settings.RATE)
         wf.writeframes(b''.join(frames))
         wf.close()
+        call("soxi -D temp.wav > time.txt", shell=True)
+        f = open("time.txt","r")
+        trimval = float(f.read())
+        print str(trimval), filename
+        if trimval > 0.3:
+            trimval = trimval-0.3
+
+        print str(trimval), filename
+
+        call("sox temp.wav %s trim 0 %s" % (filename, str(trimval)), shell=True)
 
     def print_info(self):
         p = pyaudio.PyAudio()
@@ -151,10 +165,10 @@ class AudioArt(object):
                 # if event.type != NOEVENT:
                 #     print event
 
-                if event.type == KEYDOWN:
+                if event.type == KEYDOWN and event.key == K_RETURN:
                     self.stop_play(p, wf, stream)
                     # Play instructions
-                    # self.play_instruction()
+                    self.play_instruction()
                     # Stop audio
                     self.record_with_event(path.join(settings.RECORD_DIR, art.timestamp()+settings.RECORD_FILE))
 

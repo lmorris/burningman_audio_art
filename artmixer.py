@@ -53,7 +53,7 @@ class ArtMixer(object):
         cat_string += filename + " gain " + str(vol)
         if effects:
             # TONY ADD effects here
-            cat_string += " flanger"
+            cat_string += " flanger echo"
         if cat_count == 1:
             print "sox %s " % cat_string
             call("sox %s " % cat_string, shell=True)
@@ -64,10 +64,10 @@ class ArtMixer(object):
 
     # Tony don't touch this one
     def gen_left(self):
-        self.gen(settings.LEFT_PLAY, vol="1", rand=False, all=True, effects=True)
+        self.gen(settings.LEFT_PLAY, vol="1", rand=False, all=True)
 
     def gen_right(self): # Tony play with volume here
-        self.gen(settings.RIGHT_PLAY, vol="-4", rand=True, all=True)
+        self.gen(settings.RIGHT_PLAY, vol="-2", rand=True, all=True)
 
     def gen_both(self):
         # self.gen(settings.MIDDLE_PLAY, vol="-h", all=True)
