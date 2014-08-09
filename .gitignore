@@ -1,0 +1,6 @@
+*.wav
+.idea
+*.old
+time.txt
+*.pyc
+*~
