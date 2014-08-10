@@ -4,17 +4,17 @@ __author__ = 'studleemon'
 import os
 import os.path as path
 import glob
-from subprocess import call
+from subprocess import call, Popen, PIPE
 import pyaudio
 import pygame
-from pygame.locals import KEYUP, KEYDOWN, K_RETURN, K_KP_ENTER, NOEVENT
+from pygame.locals import KEYUP, KEYDOWN, K_RETURN, K_KP_ENTER, NOEVENT, K_ESCAPE
 import wave
 import time
 import datetime
 import settings
 import artmixer
 pygame.init()
-screen = pygame.display.set_mode([800,600])
+screen = pygame.display.set_mode([1000,800])
 pygame.event.pump()
 
 class AudioArt(object):
@@ -129,12 +129,24 @@ class AudioArt(object):
         f = open("time.txt","r")
         trimval = float(f.read())
         print str(trimval), filename
-        if trimval > 0.3:
-            trimval = trimval-0.3
+        if trimval > 0.35:
+            trimval = trimval-0.35
 
         print str(trimval), filename
-
         call("sox temp.wav %s trim 0 %s" % (filename, str(trimval)), shell=True)
+
+        p = Popen("sox %s -n stats" % filename, shell=True, stderr=PIPE)
+        avg_db = -32.0
+        for line in p.stderr.readlines():
+            if "RMS lev dB" in line:
+                line = ''.join(line.split("RMS lev dB"))
+                line = line.strip()
+                avg_db = float(line)
+
+        if avg_db > settings.AVG_DB_MAX:
+            print "Rejected AVB DB: %s" % avg_db
+            os.unlink(filename)
+
 
     def print_info(self):
         p = pyaudio.PyAudio()
@@ -162,14 +174,15 @@ class AudioArt(object):
                 stream.write(data)
                 data = wf.readframes(settings.CHUNK)
                 event = pygame.event.poll()
-                # if event.type != NOEVENT:
-                #     print event
-
+                if event.type == K_ESCAPE:
+                    self.stop_play(p, wf, stream)
+                    exit()
                 if event.type == KEYDOWN and event.key == K_RETURN:
                     self.stop_play(p, wf, stream)
                     # Play instructions
                     self.play_instruction()
                     # Stop audio
+                    time.sleep(0.1) # Sleep to let the beep complete
                     self.record_with_event(path.join(settings.RECORD_DIR, art.timestamp()+settings.RECORD_FILE))
 
                     mix.gen_left()

@@ -55,10 +55,10 @@ class ArtMixer(object):
             # TONY ADD effects here
             cat_string += " flanger echo"
         if cat_count == 1:
-            print "sox %s " % cat_string
+            # print "sox %s " % cat_string
             call("sox %s " % cat_string, shell=True)
         elif cat_count > 1:
-            print "sox --combine concatenate %s" % cat_string
+            # print "sox --combine concatenate %s" % cat_string
             call("sox --combine concatenate %s" % cat_string, shell=True)
 
 

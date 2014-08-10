@@ -24,3 +24,8 @@ RATE = 44100
 MAX_PLAY = 5
 
 CROSS_FADE = 5000
+
+# Filter by DB level
+AVG_DB_MAX = 0.0
+AVG_DB_ADJUST = -10.0
+AVG_DB_MIN = -70.0
